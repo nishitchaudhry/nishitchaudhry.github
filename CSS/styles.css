@@ -1,0 +1,34 @@
+body {font-family: Arial, sans-serif; font-size:0.8em;}
+header,nav, section,article,footer,figure
+
+nav ul {margin:0; padding:0;}
+nav ul li {display:inline; margin:5px;}
+*{box-sizing : border-box}
+.container{width : 100%;
+background-color: white; }
+.skills{text-align: right;
+padding : 10px;
+color : white}
+.C{width: 80%;
+background-color: green;}
+.Python{width: 40%;
+background-color: red;}
+.Java{width: 50%;
+background-color: yellow ;}
+.html{width: 70%;
+background-color: blue;}
+.css{width: 60%;
+background-color: teal;}
+.box{border:1px solid black; padding:0.5%;}
+.box2{border:1px solid darkblue; padding:5%; width: 700px}
+
+.mystyle{font-family: Georgia, 'Times New Roman', Times, serif;
+background-color: rgb(235, 220, 243);
+color: black }
+
+.head{font-size: 30px}
+
+.yellow{color: brown; text-shadow: red ;font-size:15px}
+.pic{background-image: url("Images/main2.jpg")}
+
+.body{color: rgb(77, 14, 77)}
