@@ -18,7 +18,7 @@ nav ul li {display:inline; margin:5px;}
 
 	<header>
 			<nav style=text-align:center>
-					<ul>
+					<ul id=navbar>
 						<li><a class="yellow" href="index.html">HOME</a></li>
 						<li><a class="yellow" href="ABOUT.html">ABOUT</a></li>
 						<li><a class="yellow" href="SKILLS.html">SKILLS</a></li>
@@ -48,8 +48,8 @@ nav ul li {display:inline; margin:5px;}
 
 <td>
 
-	<pre class=box2> 						
-<h1 class=head><u>Academic Details</u></h1>
+	<pre class=box2 ; font-family='Courier New', Courier, monospace;> 						
+<p class=head><u>Academic Details</u></p>
 <h2>1. Shiv Nadar University, Greater Noida</h2>
 <h3> - B.Tech : Electrical and Electronics Engineering (minor in Management)</h3>
 <h2>2. Ryan International School, Vasant Kunj</h2>
@@ -70,6 +70,27 @@ nav ul li {display:inline; margin:5px;}
 <footer>
 		<p>&copy; 2019  All rights reserved. Designed by Nishit Chaudhry</p>
 	</footer>
+
+
+	<script>
+			window.onscroll = function() {myFunction()};
+		
+		// Get the navbar
+		var navbar = document.getElementById("navbar");
+		
+		// Get the offset position of the navbar
+		var sticky = navbar.offsetTop;
+		
+		// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+		function myFunction() {
+		  if (window.pageYOffset >= sticky) {
+			navbar.classList.add("sticky")
+		  } else {
+			navbar.classList.remove("sticky");
+		  }
+		}
+			</script>
+		
 
 </body>
 </html>

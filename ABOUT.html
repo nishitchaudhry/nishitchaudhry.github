@@ -17,7 +17,7 @@ nav ul li {display:inline; margin:5px;}
 <body class="body">
 <header>
 	<nav style=text-align:center>
-		<ul >
+		<ul id=navbar>
 			<li><a class="yellow" href="index.html">HOME</a></li>
 			<li><a class="yellow" href="ABOUT.html">ABOUT</a></li>
 			<li><a class="yellow" href="SKILLS.html">SKILLS</a></li>
@@ -37,7 +37,7 @@ nav ul li {display:inline; margin:5px;}
 
 
 <article>
-	<table border=0; cellpadding=50px; style=text-align:left;>
+	<table border=0 ; cellpadding=50px ; style=text-align:left ;>
 	<tr>
 		<td><img src="Images/Me2.jpg"; width=300px; height= 470px; ></td>
 		
@@ -88,14 +88,14 @@ nav ul li {display:inline; margin:5px;}
 					
 											</table> 
 </article>
-<article><pre><h4 style=font-size:17px>
+<article><pre font-family='Courier New', Courier, monospace;><p style=font-size:17px font-family='Courier New', Courier, monospace;>
 I am presently an intern in Cognizant Technology Solutions,
 Pune. I aspire to become a software developer in CTS. 
 I am passionate about learning the nuances of web 
 development. I believe that team-work and time-management 
 can lead us to great heights. I am a football fanatic
 who also loves to listen to music.
-</h4>
+</p>
 </pre>
 </article>
 </section>
@@ -103,6 +103,26 @@ who also loves to listen to music.
 <article>
 <li><a href="External/MyResume.pdf"><h3>My Resume</h3></a></li>
 </article>
+
+<script>
+		window.onscroll = function() {myFunction()};
+	
+	// Get the navbar
+	var navbar = document.getElementById("navbar");
+	
+	// Get the offset position of the navbar
+	var sticky = navbar.offsetTop;
+	
+	// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+	function myFunction() {
+	  if (window.pageYOffset >= sticky) {
+		navbar.classList.add("sticky")
+	  } else {
+		navbar.classList.remove("sticky");
+	  }
+	}
+		</script>
+	
 </body>
 
 

@@ -18,7 +18,7 @@ nav ul li {display:inline; margin:5px;}
 
 	<header>
 			<nav style=text-align:center>
-					<ul>
+					<ul id=navbar>
 						<li><a class="yellow" href="index.html">HOME</a></li>
 						<li><a class="yellow" href="ABOUT.html">ABOUT</a></li>
 						<li><a class="yellow" href="SKILLS.html">SKILLS</a></li>
@@ -45,10 +45,10 @@ nav ul li {display:inline; margin:5px;}
 					<td><img src="Images/Me2.jpg"; width=300px; height=470px; ></td>
 					<td>
 					<pre class=box2>
-<h1 style=font-size:30px>Contact Me!</h1>
-<h2>Email : Nishit.Chaudhry@cognizant.com
+<p style=font-size:30px ; font-family='Courier New', Courier, monospace;>Contact Me!</p>
+<p style=font-size:20px ; font-family='Courier New', Courier, monospace;>Email : Nishit.Chaudhry@cognizant.com
 Phone : 9899746574
- </h2>
+</p>
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.5310492056355!2d73.68757821434025!3d18.595169171742963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bb6d706077ff%3A0x6fb70038f2c537d6!2sCognizant+CDC!5e0!3m2!1sen!2sin!4v1548245381731" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>       
 					</td>
 				</tr>
@@ -68,6 +68,26 @@ Phone : 9899746574
 	<footer>
 		<p>&copy; 2019  All rights reserved. Designed by Nishit Chaudhry</p>
 	</footer>
+
+	<script>
+			window.onscroll = function() {myFunction()};
+		
+		// Get the navbar
+		var navbar = document.getElementById("navbar");
+		
+		// Get the offset position of the navbar
+		var sticky = navbar.offsetTop;
+		
+		// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+		function myFunction() {
+		  if (window.pageYOffset >= sticky) {
+			navbar.classList.add("sticky")
+		  } else {
+			navbar.classList.remove("sticky");
+		  }
+		}
+			</script>
+		
 
 </body>
 </html>

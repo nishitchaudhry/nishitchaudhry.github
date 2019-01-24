@@ -19,7 +19,7 @@ nav ul li {display:inline; margin:5px;}
 
 	<header>
 			<nav style=text-align:center>
-					<ul>
+					<ul id=navbar>
 						<li><a class="yellow" href="index.html">HOME</a></li>
 						<li><a class="yellow" href="ABOUT.html">ABOUT</a></li>
 						<li><a class="yellow" href="SKILLS.html">SKILLS</a></li>
@@ -52,7 +52,7 @@ nav ul li {display:inline; margin:5px;}
 						
 
 <pre class=box2>
-<h1 class=head; style=font-size:30px><u>Projects</u></h1>
+<p class=head ; style=font-size:30px><u>Projects</u></p>
 <h2><u>Voice based home automation</u></h2>
 <h3>Voice based switching and intensity control of Incadescent and LED lights 
 using Amazon Alexa AI over bluetooth. Also, a smart plug was designed to 
@@ -87,6 +87,26 @@ Microntroller used : STM32</h3> </pre>
 	<footer>
 		<p>&copy; 2019  All rights reserved. Designed by Nishit Chaudhry</p>
 	</footer>
+
+	<script>
+			window.onscroll = function() {myFunction()};
+		
+		// Get the navbar
+		var navbar = document.getElementById("navbar");
+		
+		// Get the offset position of the navbar
+		var sticky = navbar.offsetTop;
+		
+		// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+		function myFunction() {
+		  if (window.pageYOffset >= sticky) {
+			navbar.classList.add("sticky")
+		  } else {
+			navbar.classList.remove("sticky");
+		  }
+		}
+			</script>
+		
 
 </body>
 </html>

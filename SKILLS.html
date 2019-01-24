@@ -19,7 +19,7 @@
  
 	<header>
 			<nav style=text-align:center>
-					<ul>
+					<ul id=navbar>
 						<li><a class="yellow" href="index.html">HOME</a></li>
 						<li><a class="yellow" href="ABOUT.html">ABOUT</a></li>
 						<li><a class="yellow" href="SKILLS.html">SKILLS</a></li>
@@ -41,12 +41,12 @@
 			</article>
 	<article>
 			
-			<table border=0; cellpadding=50px>
+			<table border=0 ; cellpadding=50px>
 				<tr>
 					<td><img src="Images/Me2.jpg"; width=300px; height=470px; ></td>
 			
 					<td>	
-						<section class =box2>
+						<section class =box2 ; font-family='Courier New', Courier, monospace;>
 							<h1 style=font-size:30px><u>My Skills</u></h1>
 							<p>Language C</p>
 							<div class= "container">
@@ -89,6 +89,26 @@
 	<footer>
 		<p>&copy; 2019  All rights reserved. Designed by Nishit Chaudhry</p>
 	</footer>
+
+	<script>
+			window.onscroll = function() {myFunction()};
+		
+		// Get the navbar
+		var navbar = document.getElementById("navbar");
+		
+		// Get the offset position of the navbar
+		var sticky = navbar.offsetTop;
+		
+		// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+		function myFunction() {
+		  if (window.pageYOffset >= sticky) {
+			navbar.classList.add("sticky")
+		  } else {
+			navbar.classList.remove("sticky");
+		  }
+		}
+			</script>
+		
 
 </body>
 </html>

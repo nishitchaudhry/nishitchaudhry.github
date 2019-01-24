@@ -1,4 +1,4 @@
-body {font-family: Arial, sans-serif; font-size:0.8em;}
+body {font-family: 'Courier New', Courier, monospace; font-size:0.8em;}
 header,nav, section,article,footer,figure
 
 nav ul {margin:0; padding:0;}
@@ -22,7 +22,7 @@ background-color: teal;}
 .box{border:1px solid black; padding:0.5%;}
 .box2{border:1px solid darkblue; padding:5%; width: 700px}
 
-.mystyle{font-family: Georgia, 'Times New Roman', Times, serif;
+.mystyle{font-family: 'Courier New', Courier, monospace;
 background-color: rgb(235, 220, 243);
 color: black }
 
@@ -32,3 +32,48 @@ color: black }
 .pic{background-image: url("Images/main2.jpg")}
 
 .body{color: rgb(77, 14, 77)}
+
+#navbar {
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+    background-color: rgb(78, 7, 126);
+  }
+  
+  /* Navbar links */
+  #navbar a {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+  #navbar li ul{
+    
+    font-family: 'Courier New', Courier, monospace;
+    float: left;
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  /* Page content */
+  .content {
+    padding: 16px;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
