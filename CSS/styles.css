@@ -20,12 +20,18 @@ background-color: blue;}
 .css{width: 80%;
 background-color: teal;}
 .box{border:1px solid black; 
-    padding:0.5%;
-    box-sizing: border-box}
+    padding:1%;
+    box-sizing: border-box ;
+    border-radius : 25px;
+    box-shadow: 10px 5px #102b5e}
 .box2{border:1px solid rgb(2, 2, 19); 
     padding:5% ;  
-    width: 1000px ; 
-box-sizing: border-box;}
+    width: 700px ; 
+box-sizing: border-box;
+border-radius : 25px;
+box-shadow: 10px 5px #102b5e}
+
+}
 
 .mystyle{font-family: 'Courier New', Courier, monospace;
 background-color: rgb(255, 255, 255);
@@ -82,3 +88,4 @@ color: black }
   .sticky + .content {
     padding-top: 60px;
   }
+
