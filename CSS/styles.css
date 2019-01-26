@@ -9,11 +9,11 @@ background-color: grey; }
 .skills{text-align: right;
 padding : 10px;
 color : white}
-.C{width: 90%;
+.C{width: 80%;
 background-color: green;}
-.Python{width:70%;
+.Python{width:50%;
 background-color: red;}
-.Java{width: 60%;
+.Java{width: 50%;
 background-color: chocolate ;}
 .html{width: 90%;
 background-color: blue;}
