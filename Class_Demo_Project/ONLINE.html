@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link ref=stylesheet href="CSS/style.css">
+        <title><h1>Scholar's Circle</h1></title>
+
+        <style>
+ ul{background-color: black; 
+        width: auto ; border: 2px solid black; 
+        padding: 5px ; text-align: center}
+        nav li{display: inline; }
+        a{font-family:'Courier New', Courier, monospace ; 
+        font-display: bold ; 
+        font-size: 15px ;
+        padding: 30px ;  
+        color: white ; text-decoration: none ; }
+        footer{font-size:13px}
+        </style>
+
+<header>
+        
+    <nav>
+        <ul id="navbar">
+            <li><a href = "index.html">HOME</a></li>
+            <li><a href = "ONLINE.html">ONLINE COURSES</a></li>
+            <li><a href = "REGISTRATION.html">REGISTRATION</a></li>
+            <li><a href = "PHOTO.html">PHOTOGALLERY</a></li>
+            <li><a href = "CONTACT.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+    <img src = "Images/top.jpg"; width="100%" ; height=auto>
+</header>
+
+<script>
+window.onscroll = function() {myFunction()};
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+
+<body class="mystyle">
+        
+            <section>
+                <form method="POST">
+                <p>JAVA</p>
+                <p>DOT NET</p>
+                <p>MEAN STACK</p>
+                <p>ANGULAR</p>  
+        
+                </form>
+            </section>
+        
+                
+        </body>
+            
+        
+        </head>
+        
+        <footer class="foot">
+        <p&copy>Created by Nishit Chaudhry. All rights reserved. </p>
+        </footer>
+</html>
